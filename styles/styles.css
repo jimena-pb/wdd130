@@ -1,6 +1,14 @@
-main{
-    max-width:840px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    font-size: 14px;
+    font-family: Raleway, Nunito, Merriweather;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -8,12 +16,21 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
+
 h1{
     color: darkblue;
+    padding: .5rem;
 }
-img {
+
+main{
+    max-width: 640px;
+}
+
+main img {
+    float: right;
+    margin: 0 0 1rem 1rem;
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -21,16 +38,15 @@ img {
     box-shadow: 0 0 30px gray ;
 }
 
-p {padding: 0;}
+p {
+    margin: 1rem;
+}
 
 aside {
     width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
+    padding-top: 1rem;
 }
 
 aside img {
@@ -38,8 +54,28 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+
 footer{
     margin-top: 1em;
     border-top: 1px solid#000;
     text-align: center;
+}
+
+/*Class selectors*/
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / .1);
+    padding: 1 rem;
+    background-color: #ddd;
+    color: #333;
+}
+
+.indent{
+    padding-left: 2rem;
 }
