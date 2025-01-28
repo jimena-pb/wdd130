@@ -1,3 +1,14 @@
+:root {
+    --font-primary: Raleway, Nunito, Merriweather;
+    --background-color-nav: purple;
+    --text-color-nav: white;
+    --heading-color: #5B1A8A;
+    --box-background: #fcf0fa;
+    --border-color: #9370db;
+    --box-text-color: #333;
+    --box-shadow: 0 0 30px rgb(233, 226, 231);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +17,21 @@
 
 body{
     font-size: 14px;
-    font-family: Raleway, Nunito, Merriweather;
+    font-family: var(--font-primary);
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--background-color-nav);
     padding: 10px;
 }
 nav a {
-    color: white;
+    color: var(--text-color-nav);
     display: block;
     padding: 10px;
 }
 
 h1{
-    color: darkblue;
+    color: var(--heading-color);
     padding: .5rem;
 }
 
@@ -33,9 +44,9 @@ main img {
     margin: 0 0 1rem 1rem;
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid (--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray ;
+    box-shadow: 0 0 30px (--box-shadow);
 }
 
 p {
@@ -62,7 +73,7 @@ aside h2 {
 
 footer{
     margin-top: 1em;
-    border-top: 1px solid#000;
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
 
@@ -72,8 +83,8 @@ footer{
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / .1);
     padding: 1 rem;
-    background-color: #ddd;
-    color: #333;
+    background-color: var(--box-background);
+    color: var(--box-text-color);
 }
 
 .indent{
